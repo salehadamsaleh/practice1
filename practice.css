@@ -1,0 +1,105 @@
+body{
+    background-image: url(desert-2774945_640.jpg);
+    background-size: cover;
+}
+header ul li::after{
+    content: '';
+    background: rgb(228, 200, 200);
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0; 
+    width: 0;
+    transition-delay: 0.3s;
+    transition-duration: 0.2s;
+}
+header ul li:hover::after{
+    width: 100%;
+}
+header ul li{
+    margin:0 10px;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.logo{
+    cursor: pointer;
+}
+header ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container div img:hover{
+    border: 2px solid #eee;
+   width: 130px;
+   height: 130px;
+}
+.let h2{
+    font-size: 70px;
+}
+.container div img{
+    margin-right: 8px;
+    border-radius: 2px;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: 0.1s;
+    transition-delay: 0.2s;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.let{
+color: #fff;
+position: absolute;
+top: 30%;
+left: 30%;
+text-align: center;
+}
+button{
+    width: 200px;
+    border-radius: 25px;
+    padding: 10px 0;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #eee;
+    font-weight: bold;
+    margin: 20px 10px;
+    color:rgb(228, 200, 200);
+    cursor: pointer;
+    position: relative;
+}
+button:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    color:#333;
+    tran
+}
+span{
+    width: 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 25px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    transition: width;
+    transition-duration: 0.4s;
+    transition-timing-function: 0.1s;
+    transition-delay: 0.2s;
+}
+button:hover span{
+    width:100%;
+}
